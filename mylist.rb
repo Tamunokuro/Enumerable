@@ -7,5 +7,7 @@ class MyList
     @list = lists
   end
 
+  def each(&block)
+    @list.each { |element| block.call(element) }
+  end
 end
-
